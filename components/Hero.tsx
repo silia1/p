@@ -100,12 +100,13 @@ export default function Hero() {
     }}
   >
     <Image
-      src="/jj.png"
-      alt="Silia El Ghazi"
-      fill
-      className="object-contain object-[center_0%]"
-      priority
-    />
+  src="/jj.png"
+  alt="Silia El Ghazi"
+  fill
+  className="object-contain object-[center_0%]"
+  priority
+  unoptimized
+/>
   </div>
 </div>
 
