@@ -90,25 +90,17 @@ export default function Hero() {
                 </svg>
 
                 {/* IMAGE MASQUÉE */}
-             <div className="absolute inset-0 flex items-center justify-center z-10">
-  <div 
-    className="w-[71%] h-[71%] relative overflow-hidden"
-    style={{
-      clipPath: 'path("M0.82,0.57 C0.77,0.91,0.53,1,0.29,0.94 C0.06,0.88,-0.04,0.54,0.04,0.29 C0.12,0.04,0.36,-0.03,0.6,0.03 C0.83,0.08,0.87,0.22,0.82,0.57")',
-      // Ou utilisez une forme plus simple comme:
-      // clipPath: 'circle(50%)'
-    }}
-  >
-    <Image
-  src="/jj.png"
-  alt="Silia El Ghazi"
-  fill
-  className="object-contain object-[center_0%]"
-  priority
-  unoptimized
-/>
-  </div>
-</div>
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                  <div className="w-[71%] h-[71%] relative overflow-hidden [clip-path:url(#blob)]">
+                    <Image
+                      src="/jj.png"
+                      alt="Silia El Ghazi"
+                      fill
+                      className="object-contain object-[center_0%] scale-70 translate-x-[-1px] translate-y-[-1px]"
+                      priority
+                    />
+                  </div>
+                </div>
 
               </div>
             </motion.div>
