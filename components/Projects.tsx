@@ -25,18 +25,16 @@ const projects = [
     description: "Laravel, Vue.js, PL/SQL, Docker",
     image: "/A.jfif",
     github: "https://github.com/silia1/Children-s-Activity-Management-Plateform.git",
-    demo: "/SS.mp4",
+    demo: "https://youtu.be/e1oxxrIgGJA",
   },
   {
     title: "Club Activity Management",
     description: "Nest.js, SQL, Next.js",
     image: "/clubhub.png",
     github: "https://github.com/silia1/Clubhub-Project.git",
-    demo: "/clubhub.mp4",
+    demo: "https://youtu.be/ksEMMN1GQpQ",
   },
 ]
-
-// Mini-projets avec des tailles très petites
 const miniProjects = [
   {
     title: "Deploiement sur Kubernetes avec Jenkins",
@@ -376,9 +374,22 @@ export default function Projects() {
                 </button>
               </div>
               <div className="aspect-video">
-                <video src={videoUrl} controls autoPlay className="w-full h-full">
-                  Your browser does not support the video tag.
-                </video>
+                {videoUrl.includes("youtu") ? (
+                  <iframe
+                    src={videoUrl
+                      .replace("youtu.be/", "youtube.com/embed/")
+                      .replace("youtube.com/watch?v=", "youtube.com/embed/")}
+                    className="w-full h-full"
+                    allowFullScreen
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  ></iframe>
+                ) : (
+                  <video src={videoUrl} controls autoPlay className="w-full h-full">
+                    Your browser does not support the video tag.
+                  </video>
+                )}
               </div>
             </motion.div>
           </motion.div>
