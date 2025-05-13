@@ -89,7 +89,7 @@ export default function Hero() {
                     }}
                   >
                     <Image
-                      src="/jj.png"
+                      src="/JJ.png"
                       alt="Silia El Ghazi"
                       fill
                       className="object-contain object-[center_0%] scale-70 translate-x-[-1px] translate-y-[-1px]"
