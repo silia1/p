@@ -93,12 +93,14 @@ export default function Hero() {
                 <div className="absolute inset-0 flex items-center justify-center z-10">
                   <div className="w-[71%] h-[71%] relative overflow-hidden [clip-path:url(#blob)]">
                     <Image
-                      src="/jj.png"
-                      alt="Silia El Ghazi"
-                      fill
-                      className="object-contain object-[center_0%] scale-70 translate-x-[-1px] translate-y-[-1px]"
-                      priority
-                    />
+  src="/jj.png"
+  alt="Silia El Ghazi"
+  fill
+  className="object-contain object-[center_0%] scale-70 translate-x-[-1px] translate-y-[-1px]"
+  priority
+  sizes="(max-width: 768px) 100vw, 530px"
+/>
+
                   </div>
                 </div>
 
