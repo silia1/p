@@ -88,13 +88,16 @@ export default function Hero() {
                         "path('M0.82,0.57 C0.77,0.91,0.53,1,0.29,0.94 C0.06,0.88,-0.04,0.54,0.04,0.29 C0.12,0.04,0.36,-0.03,0.6,0.03 C0.83,0.08,0.87,0.22,0.82,0.57')",
                     }}
                   >
-                    <Image
-                      src="/JJ.png"
-                      alt="Silia El Ghazi"
-                      fill
-                      className="object-contain object-[center_0%] scale-70 translate-x-[-1px] translate-y-[-1px]"
-                      priority
-                    />
+                   <Image
+  src="/JJ.png"
+  alt="Silia El Ghazi"
+  width={300}
+  height={300}
+  className="object-contain object-[center_0%] scale-70 translate-x-[-1px] translate-y-[-1px]"
+  priority
+/>
+
+
                   </div>
                 </div>
               </div>
